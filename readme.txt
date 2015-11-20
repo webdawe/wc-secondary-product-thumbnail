@@ -1,27 +1,25 @@
-=== WooCommerce Product Image Flipper ===
-Contributors: jameskoster
-Tags: woocommerce, ecommerce, product, images, photos, product photos, front and back
+=== WC Secondary Product Thumbnail ===
+Contributors: frosdqy
+Tags: woocommerce, thumbnail, secondary image, secondary thumbnail, product thumbnail, product image, hover effect, reveal, image flipper, front and back
 Requires at least: 3.8
-Tested up to: 4.0
-Stable tag: 0.2.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tested up to: 4.3
+Stable tag: 1.0
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Adds a secondary image on product archives that is revealed on hover. Perfect for displaying front/back shots of clothing and other products.
+Adds a hover effect that will reveal a secondary product thumbnail to product images in your WooCommerce store.
 
 == Description ==
 
-A very simple plugin that adds a secondary product thumbnail on product archives that is revealed when you hover over the main product image.
+WC Secondary Product Thumbnail is a very simple plugin that adds a secondary product thumbnail on product archives that is revealed when you hover over the main product image.
 
 This plugin is ideal if you'd like to display more than one image on product archives, and perfect if you want to display front and back images of clothing for example.
 
-Please feel free to contribute on <a href="https://github.com/jameskoster/woocommerce-product-image-flipper">github</a>.
-
-Note: This plugin uses CSS 3d transforms to show/hide the images and will therefore only work in modern browsers.
+Please feel free to contribute on <a href="https://github.com/frosdqy/wc-secondary-product-thumbnail">GitHub</a>.
 
 == Installation ==
 
-1. Upload `woocommerce-product-image-flipper` to the `/wp-content/plugins/` directory
+1. Upload `wc-secondary-product-thumbnail` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Done!
 
@@ -37,7 +35,7 @@ This is due to the secondary image being positioned absolutely. This is the clea
 
 = It doesn't work. Nothing happens when I hover over images? =
 
-First of all check that the product you're checking has a gallery attached to it. Secondly you should be aware that this plugin uses CSS 3d transforms and will therefore only work in modern browsers.
+Check that the product you're checking has a gallery attached to it.
 
 
 == Screenshots ==
@@ -46,8 +44,11 @@ First of all check that the product you're checking has a gallery attached to it
 
 == Changelog ==
 
-= 0.2.0 =
-* Fix - WooCommerce 2.2 compatibility
-
-= 0.1 =
-Initial release.
+= 1.0 =
+* Initial version.
+This is a fork of the WooCommerce Product Image Flipper (https://github.com/jameskoster/woocommerce-product-image-flipper) plugin by James Koster. All previous changelogs can be found there.
+Notable changes applied in this fork:
+* Remove image moving up and down animations, now just simple fade in and fade out.
+* Disable plugin's functionality on mobile devices (as this plugin is supposed to only work on devices with mouse).
+* Works in IE8+ and all of the evergreen browsers.
+* Improved themes compatibility.

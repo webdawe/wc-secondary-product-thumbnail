@@ -1,9 +1,9 @@
-jQuery(document).ready(function($){
-	jQuery( 'ul.products li.pif-has-gallery a:first-child' ).hover( function() {
-		jQuery( this ).children( '.wp-post-image' ).removeClass( 'fadeInDown' ).addClass( 'animated fadeOutUp' );
-		jQuery( this ).children( '.secondary-image' ).removeClass( 'fadeOutUp' ).addClass( 'animated fadeInDown' );
-	}, function() {
-		jQuery( this ).children( '.wp-post-image' ).removeClass( 'fadeOutUp' ).addClass( 'fadeInDown' );
-		jQuery( this ).children( '.secondary-image' ).removeClass( 'fadeInDown' ).addClass( 'fadeOutUp' );
-	});
+jQuery(document).ready(function($) {
+  $('.products .wcspt-has-gallery').find('a:first').hover(function(e) {
+    if (e.type === 'mouseenter') {
+      $(this).find('.secondary-thumb').stop(true, false).animate({ opacity:1 }, 300);
+    } else if (e.type === 'mouseleave') {
+      $(this).find('.secondary-thumb').animate({ opacity:0 }, 300);
+    }
+  });
 });
