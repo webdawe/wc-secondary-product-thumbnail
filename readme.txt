@@ -24,8 +24,8 @@ Notable changes/improvements applied in this fork:
 * Improved themes compatibility.
 * Works in IE8+ and all of the evergreen browsers.
 
-= Development =
-* [https://github.com/thewebflash/wc-secondary-product-thumbnail](https://github.com/thewebflash/wc-secondary-product-thumbnail)
+= GitHub =
+https://github.com/thewebflash/wc-secondary-product-thumbnail
 
 == Installation ==
 
