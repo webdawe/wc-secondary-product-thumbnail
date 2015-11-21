@@ -3,7 +3,7 @@
  * Plugin Name: WC Secondary Product Thumbnail
  * Plugin URI:  https://www.thewebflash.com/work/
  * Description: Adds a hover effect that will reveal a secondary product thumbnail to product images in your WooCommerce store.
- * Version:     1.0
+ * Version:     1.0.1
  * Author:      Hendy Tarnando
  * Author URI:  https://www.thewebflash.com/
  * Text Domain: wc-secondary-product-thumbnail
@@ -36,6 +36,15 @@ if ( ! defined( 'ABSPATH' ) ) {
  **/
 if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) &&
   !wp_is_mobile() ) {
+
+  /**
+   * Localisation (with WPML support)
+   **/
+  add_action( 'init', 'wcspt_load_textdomain' );
+  function wcspt_load_textdomain() {
+    load_plugin_textdomain( 'wc-secondary-product-thumbnail', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+  }
+
 
   /**
    * New Badge class
@@ -98,7 +107,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 
         if ( $attachment_ids ) {
           $secondary_image_id = $attachment_ids['0'];
-          echo wp_get_attachment_image( $secondary_image_id, 'shop_catalog', '', $attr = array( 'class' => 'secondary-thumb attachment-shop-catalog' ) );
+          echo wp_get_attachment_image( $secondary_image_id, 'shop_catalog', '', $attr = array( 'class' => 'secondary-thumb attachment-shop-catalog', 'style' => 'opacity: 0;' ) );
         }
       }
 

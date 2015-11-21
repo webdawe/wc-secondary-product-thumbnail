@@ -3,7 +3,7 @@ Contributors: frosdqy
 Tags: woocommerce, thumbnail, secondary image, secondary thumbnail, product thumbnail, product image, hover effect, reveal, image flipper, front and back
 Requires at least: 3.8
 Tested up to: 4.3
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -15,7 +15,17 @@ WC Secondary Product Thumbnail is a very simple plugin that adds a secondary pro
 
 This plugin is ideal if you'd like to display more than one image on product archives, and perfect if you want to display front and back images of clothing for example.
 
-Please feel free to contribute on <a href="https://github.com/frosdqy/wc-secondary-product-thumbnail">GitHub</a>.
+This is a fork of the [WooCommerce Product Image Flipper](https://wordpress.org/plugins/woocommerce-product-image-flipper/) plugin by James Koster. All previous changelogs can be found there.
+
+Notable changes/improvements applied in this fork:
+
+* Remove image moving up and down animations, now just simple fade in and fade out.
+* Disable plugin's functionality on mobile devices (since this plugin is supposed to only work on devices with mouse).
+* Improved themes compatibility.
+* Works in IE8+ and all of the evergreen browsers.
+
+= Development =
+* [https://github.com/thewebflash/wc-secondary-product-thumbnail](https://github.com/thewebflash/wc-secondary-product-thumbnail)
 
 == Installation ==
 
@@ -44,11 +54,8 @@ Check that the product you're checking has a gallery attached to it.
 
 == Changelog ==
 
+= 1.0.1 =
+* Fix secondary thumbnail opacity issue on some themes.
+
 = 1.0 =
 * Initial version.
-This is a fork of the WooCommerce Product Image Flipper (https://github.com/jameskoster/woocommerce-product-image-flipper) plugin by James Koster. All previous changelogs can be found there.
-Notable changes applied in this fork:
-* Remove image moving up and down animations, now just simple fade in and fade out.
-* Disable plugin's functionality on mobile devices (as this plugin is supposed to only work on devices with mouse).
-* Works in IE8+ and all of the evergreen browsers.
-* Improved themes compatibility.
