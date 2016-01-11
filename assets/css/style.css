@@ -3,20 +3,16 @@
 }
 
 .wcspt-has-gallery .onsale {
-  z-index: 999999;
+  z-index: 10;
 }
 
 .wcspt-has-gallery .secondary-thumb {
-  z-index: 99;
   position: absolute;
   top:0;
   right:0;
   left:0;
   opacity: 0;
   filter: alpha(opacity=0);
-}
-
-.wcspt-has-gallery img {
   -webkit-transition: none !important;
   -moz-transition: none !important;
   -ms-transition: none !important;
