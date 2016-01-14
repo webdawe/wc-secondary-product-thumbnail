@@ -3,7 +3,7 @@ Contributors: frosdqy
 Tags: woocommerce, thumbnail, secondary image, secondary thumbnail, product thumbnail, product image, hover effect, reveal, image flipper, front and back
 Requires at least: 3.8
 Tested up to: 4.4
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -53,6 +53,10 @@ Check that the product you're checking has a gallery attached to it.
 1. A flipped image.
 
 == Changelog ==
+
+= 1.0.3 =
+* Fix a fatal error when $product->get_gallery_attachment_ids() is called on some themes.
+* Cleanup code.
 
 = 1.0.2 =
 * Minor CSS fixes.
