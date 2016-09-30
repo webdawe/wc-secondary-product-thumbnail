@@ -55,7 +55,7 @@ Check that the product you're checking has a gallery attached to it.
 == Changelog ==
 
 = 1.0.4 =
-* Compatible up to WordPress 4.4 and WooCommerce 2.6
+* Compatible up to WordPress 4.6 and WooCommerce 2.6
 * Replace deprecated jQuery(document).ready(function) with jQuery(function)
 
 = 1.0.3 =
