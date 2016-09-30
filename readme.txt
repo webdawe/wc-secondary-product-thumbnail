@@ -2,8 +2,8 @@
 Contributors: frosdqy
 Tags: woocommerce, thumbnail, secondary image, secondary thumbnail, product thumbnail, product image, hover effect, reveal, image flipper, front and back
 Requires at least: 3.8
-Tested up to: 4.4
-Stable tag: 1.0.3
+Tested up to: 4.6
+Stable tag: 1.0.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -17,7 +17,7 @@ This plugin is ideal if you'd like to display more than one image on product arc
 
 This is a fork of the [WooCommerce Product Image Flipper](https://wordpress.org/plugins/woocommerce-product-image-flipper/) plugin by James Koster. All previous changelogs can be found there.
 
-Notable changes/improvements applied in this fork:
+= Changes & Improvements Highlights =
 
 * Remove image moving up and down animations, now just simple fade in and fade out.
 * Disable plugin's functionality on mobile devices (since this plugin is supposed to only work on devices with mouse).
@@ -53,6 +53,10 @@ Check that the product you're checking has a gallery attached to it.
 1. A flipped image.
 
 == Changelog ==
+
+= 1.0.4 =
+* Compatible up to WordPress 4.4 and WooCommerce 2.6
+* Replace deprecated jQuery(document).ready(function) with jQuery(function)
 
 = 1.0.3 =
 * Fix a fatal error when $product->get_gallery_attachment_ids() is called on some themes.

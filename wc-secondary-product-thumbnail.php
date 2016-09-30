@@ -3,7 +3,7 @@
  * Plugin Name: WC Secondary Product Thumbnail
  * Plugin URI:  https://www.thewebflash.com/work/
  * Description: Adds a hover effect that will reveal a secondary product thumbnail to product images in your WooCommerce store.
- * Version:     1.0.3
+ * Version:     1.0.4
  * Author:      Hendy Tarnando
  * Author URI:  https://www.thewebflash.com/
  * Text Domain: wc-secondary-product-thumbnail
