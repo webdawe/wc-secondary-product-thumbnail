@@ -11,7 +11,6 @@ This plugin is ideal if you'd like to display more than one image on product arc
 * Ultra lightweight
 * Does not load its JavaScript and CSS, and also secondary thumbnails on mobile devices
 * Works in almost every desktop browser
-* Available on [GitHub](https://github.com/thewebflash/wc-secondary-product-thumbnail)
 
 This is a fork of the [WooCommerce Product Image Flipper](https://wordpress.org/plugins/woocommerce-product-image-flipper/) plugin by James Koster. All previous changelog can be found there.
 
