@@ -3,7 +3,7 @@ Contributors: frosdqy
 Tags: woocommerce, thumbnail, secondary image, secondary thumbnail, product thumbnail, product image, hover effect, reveal, image flipper, front and back
 Requires at least: 3.8
 Tested up to: 4.6
-Stable tag: 1.0.4
+Stable tag: 1.1.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -15,17 +15,22 @@ WC Secondary Product Thumbnail is a very simple plugin that adds a secondary pro
 
 This plugin is ideal if you'd like to display more than one image on product archives, and perfect if you want to display front and back images of clothing for example.
 
-This is a fork of the [WooCommerce Product Image Flipper](https://wordpress.org/plugins/woocommerce-product-image-flipper/) plugin by James Koster. All previous changelogs can be found there.
+= Other Features by WC SPT =
+* High-performance animations using CSS3 transitions
+* Fallback to jQuery's .animate(), if needed
+* Ultra lightweight
+* Does not load its JavaScript and CSS, and also secondary thumbnails on mobile devices
+* Works in almost every desktop browser
+* Available on [GitHub](https://github.com/thewebflash/wc-secondary-product-thumbnail)
+
+This is a fork of the [WooCommerce Product Image Flipper](https://wordpress.org/plugins/woocommerce-product-image-flipper/) plugin by James Koster. All previous changelog can be found there.
 
 = Changes & Improvements Highlights =
-
-* Remove image moving up and down animations, now just simple fade in and fade out.
-* Disable plugin's functionality on mobile devices (since this plugin is supposed to only work on devices with mouse).
+* Removed image moving up and down animations, now just simple fade in and fade out.
+* Disabled plugin's functionality on mobile devices (since this plugin is supposed to only work on devices with mouse).
 * Improved themes compatibility.
 * Works in IE8+ and all of the evergreen browsers.
 
-= GitHub =
-https://github.com/thewebflash/wc-secondary-product-thumbnail
 
 == Installation ==
 
@@ -33,18 +38,16 @@ https://github.com/thewebflash/wc-secondary-product-thumbnail
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Done!
 
+
 == Frequently Asked Questions ==
 
 = How do I control which image is displayed on hover? =
-
 Whichever image is first in the order of product gallery images will appear on hover.
 
 = My secondary image is taller than the main product image and overlaps content when it fades in =
-
 This is due to the secondary image being positioned absolutely. This is the cleanest way I can think to do this with CSS alone. You may want to consider hard cropping your product catalog thumbnails to ensure all images are the same dimensions in product archives.
 
 = It doesn't work. Nothing happens when I hover over images? =
-
 Check that the product you're checking has a gallery attached to it.
 
 
@@ -52,10 +55,16 @@ Check that the product you're checking has a gallery attached to it.
 
 1. A flipped image.
 
+
 == Changelog ==
 
+= 1.1.0 =
+* Animations now use CSS3 transitions for smoother animation effect
+* Fallback to jQuery's .animate() in legacy browsers (e.g. IE 8-9)
+* Improved performance
+
 = 1.0.4 =
-* Compatible up to WordPress 4.6 and WooCommerce 2.6
+* Compatible up to WordPress 4.4 and WooCommerce 2.6
 * Replace deprecated jQuery(document).ready(function) with jQuery(function)
 
 = 1.0.3 =
@@ -70,3 +79,9 @@ Check that the product you're checking has a gallery attached to it.
 
 = 1.0 =
 * Initial version.
+
+
+== Upgrade Notice ==
+
+= 1.1.0 =
+Animations now use CSS3 transitions instead of jQuery's .animate()

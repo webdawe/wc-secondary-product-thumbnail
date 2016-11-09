@@ -8,14 +8,25 @@
 
 .wcspt-has-gallery .secondary-thumb {
   position: absolute;
-  top:0;
-  right:0;
-  left:0;
+  top: 0;
+  right: 0;
+  left: 0;
   opacity: 0;
   filter: alpha(opacity=0);
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
-  transition: none !important;
+}
+
+.wcspt-products:hover .wcspt-transition {
+  will-change: opacity;
+}
+
+.wcspt-transition {
+  opacity: 0 !important;
+  -webkit-transition: opacity .3s ease-in-out !important;
+  -moz-transition: opacity .3s ease-in-out !important;
+  -o-transition: opacity .3s ease-in-out !important;
+  transition: opacity .3s ease-in-out !important;
+}
+
+.wcspt-img-link:hover .wcspt-transition {
+  opacity: 1 !important;
 }
