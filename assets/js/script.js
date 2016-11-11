@@ -13,8 +13,8 @@ jQuery(function($) {
       
     // Support: IE <=9 and other legacy browsers
     } else {
-      $wcsptProducts.find('.secondary-thumb').removeClass('wcspt-transition')
-        .css({ opacity: 0, transition: 'none' });
+      $wcsptProducts.find('.secondary-thumb').css({ opacity: 0, transition: 'none' })
+        .removeClass('wcspt-transition');
       
       $wcsptProducts.find('a:first').hover(
         function() {

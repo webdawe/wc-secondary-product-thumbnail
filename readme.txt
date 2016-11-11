@@ -3,7 +3,7 @@ Contributors: frosdqy
 Tags: woocommerce, thumbnail, secondary image, secondary thumbnail, product thumbnail, product image, hover effect, reveal, image flipper, front and back
 Requires at least: 3.8
 Tested up to: 4.6
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -57,6 +57,9 @@ Check that the product you're checking has a gallery attached to it.
 
 
 == Changelog ==
+
+= 1.1.1 =
+* Use minified CSS & JS files rather than the non-minified versions, if SCRIPT_DEBUG is not turned on
 
 = 1.1.0 =
 * Animations now use CSS3 transitions for smoother animation effect
