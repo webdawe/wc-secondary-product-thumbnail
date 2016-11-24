@@ -10,11 +10,12 @@ jQuery(function($) {
     if (transitionsSupported) {
       $wcsptProducts.closest('.products').addClass('wcspt-products');
       $wcsptProducts.find('a:first').addClass('wcspt-img-link');
+      $wcsptProducts.find('.secondary-thumb').removeClass('wcspt-ie8-tempfix');
       
     // Support: IE <=9 and other legacy browsers
     } else {
       $wcsptProducts.find('.secondary-thumb').css({ opacity: 0, transition: 'none' })
-        .removeClass('wcspt-transition');
+        .removeClass('wcspt-transition wcspt-ie8-tempfix');
       
       $wcsptProducts.find('a:first').hover(
         function() {

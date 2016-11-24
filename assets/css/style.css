@@ -11,8 +11,6 @@
   top: 0;
   right: 0;
   left: 0;
-  opacity: 0;
-  filter: alpha(opacity=0);
 }
 
 .wcspt-products:hover .wcspt-transition {
@@ -29,4 +27,8 @@
 
 .wcspt-img-link:hover .wcspt-transition {
   opacity: 1 !important;
+}
+
+.wcspt-ie8-tempfix {
+  filter: alpha(opacity=0) !important;
 }

@@ -1,9 +1,10 @@
 === WC Secondary Product Thumbnail ===
 Contributors: frosdqy
+Donate link: https://www.thewebflash.com/donate/
 Tags: woocommerce, thumbnail, secondary image, secondary thumbnail, product thumbnail, product image, hover effect, reveal, image flipper, front and back
 Requires at least: 3.8
 Tested up to: 4.6
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -23,9 +24,15 @@ This plugin is ideal if you'd like to display more than one image on product arc
 * Works in almost every desktop browser
 * Available on [GitHub](https://github.com/thewebflash/wc-secondary-product-thumbnail)
 
-This is a fork of the [WooCommerce Product Image Flipper](https://wordpress.org/plugins/woocommerce-product-image-flipper/) plugin by James Koster. All previous changelog can be found there.
+= Live Demo =
+See WC Secondary Product Thumbnail in action [here](http://demo-wcspt.thewebflash.com/shop/).
 
-= Changes & Improvements Highlights =
+= Need Help? =
+Visit my [Contact page](https://www.thewebflash.com/contact/) to send your support request.
+
+= More Information =
+This is a fork of the [WooCommerce Product Image Flipper](https://wordpress.org/plugins/woocommerce-product-image-flipper/) plugin by James Koster. This forked version uses different animation effect and adds some improvements. Some notable changes and improvements:
+
 * Removed image moving up and down animations, now just simple fade in and fade out.
 * Disabled plugin's functionality on mobile devices (since this plugin is supposed to only work on devices with mouse).
 * Improved themes compatibility.
@@ -57,6 +64,9 @@ Check that the product you're checking has a gallery attached to it.
 
 
 == Changelog ==
+
+= 1.1.2 =
+* Minor CSS improvements
 
 = 1.1.1 =
 * Use minified CSS & JS files rather than the non-minified versions, if SCRIPT_DEBUG is not turned on
